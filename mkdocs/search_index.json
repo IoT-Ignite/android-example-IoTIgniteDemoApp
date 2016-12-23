@@ -1,0 +1,14 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Welcome to IoT Ignite Virtual Demo App Documentation\n\n\nFor full documentation visit \niot-ignite.com\n.", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#welcome-to-iot-ignite-virtual-demo-app-documentation", 
+            "text": "For full documentation visit  iot-ignite.com .", 
+            "title": "Welcome to IoT Ignite Virtual Demo App Documentation"
+        }
+    ]
+}
