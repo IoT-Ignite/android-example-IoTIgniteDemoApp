@@ -11,7 +11,9 @@ In the demo code, you can see how to build a connection with IoT-Ignite Agent, h
 
 Github Page: [github.com/IoT-Ignite/android-example-IoTIgniteDemoApp](https://github.com/IoT-Ignite/android-example-IoTIgniteDemoApp)
 
-Documents: [devzone.iot-ignite.com/documents/](https://devzone.iot-ignite.com/documents/)
+Full Documentation: [iot-ignite.github.io/android-example-IoTIgniteDemoApp/](https://iot-ignite.github.io/android-example-IoTIgniteDemoApp/)
+
+IoT-Ignite Documents: [devzone.iot-ignite.com/documents/](https://devzone.iot-ignite.com/documents/)
 
 IoT-Ignite Device SDK Reference: [devzone.iot-ignite.com/device-api/iot-ignite/reference/](https://devzone.iot-ignite.com/device-api/iot-ignite/reference/)
 
