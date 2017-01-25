@@ -2,13 +2,13 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Welcome to IoT Ignite Virtual Demo App Documentation\n\n\nFor full documentation visit \niot-ignite.com\n.", 
+            "text": "IoT-Ignite Virtual Demo Application\n\n\nHere you can experience basics of an IoT project with IoT-Ignite value-adds. You can observe the sensor values and define rules at IoT-Ignite Devzone Panel.\n\n\nNote that, you have to install IoT-Ignite Agent to your Android device and register that device to IoT-Ignite. Please visit demo page for the instructions: \ndevzone.iot-ignite.com/dpanel/demo\n\n\nIn the demo code, you can see how to build a connection with IoT-Ignite Agent, how to create node and sensors and how to send sensor data to IoT-Ignite Cloud. Additionally, you can see how to receive sensor data configurations and actuator data and more.\n\n\n\n\n\n\nGithub Page: \ngithub.com/IoT-Ignite/android-example-IoTIgniteDemoApp\n\n\nDocuments: \ndevzone.iot-ignite.com/documents/\n\n\nIoT-Ignite Device SDK Reference: \ndevzone.iot-ignite.com/device-api/iot-ignite/reference/\n\n\nFor full information about IoT-Ignite, please visit \niot-ignite.com\n.", 
             "title": "Home"
         }, 
         {
-            "location": "/#welcome-to-iot-ignite-virtual-demo-app-documentation", 
-            "text": "For full documentation visit  iot-ignite.com .", 
-            "title": "Welcome to IoT Ignite Virtual Demo App Documentation"
+            "location": "/#iot-ignite-virtual-demo-application", 
+            "text": "Here you can experience basics of an IoT project with IoT-Ignite value-adds. You can observe the sensor values and define rules at IoT-Ignite Devzone Panel.  Note that, you have to install IoT-Ignite Agent to your Android device and register that device to IoT-Ignite. Please visit demo page for the instructions:  devzone.iot-ignite.com/dpanel/demo  In the demo code, you can see how to build a connection with IoT-Ignite Agent, how to create node and sensors and how to send sensor data to IoT-Ignite Cloud. Additionally, you can see how to receive sensor data configurations and actuator data and more.    Github Page:  github.com/IoT-Ignite/android-example-IoTIgniteDemoApp  Documents:  devzone.iot-ignite.com/documents/  IoT-Ignite Device SDK Reference:  devzone.iot-ignite.com/device-api/iot-ignite/reference/  For full information about IoT-Ignite, please visit  iot-ignite.com .", 
+            "title": "IoT-Ignite Virtual Demo Application"
         }
     ]
 }
