@@ -5,9 +5,9 @@ Note that, you have to install IoT-Ignite Agent to your Android device and regis
 
 In the demo code, you can see how to build a connection with IoT-Ignite Agent, how to create node and sensors and how to send sensor data to IoT-Ignite Cloud. Additionally, you can see how to receive sensor data configurations and actuator data and more.
 
-![IoT Ignite Virtual Demo App](images/iotignite_demo.png)
+![IoT Ignite Virtual Demo App](docs/images/iotignite_demo.png)
 
-![IoT Ignite Virtual Demo App Rules](images/iotignite_demo_rule.png)
+![IoT Ignite Virtual Demo App Rules](docs/images/iotignite_demo_rule.png)
 
 Github Page: [github.com/IoT-Ignite/android-example-IoTIgniteDemoApp](https://github.com/IoT-Ignite/android-example-IoTIgniteDemoApp)
 
