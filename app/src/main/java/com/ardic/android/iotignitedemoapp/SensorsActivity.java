@@ -1,9 +1,8 @@
 package com.ardic.android.iotignitedemoapp;
 
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v4.content.ContextCompat;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.SeekBar;
@@ -12,7 +11,7 @@ import android.widget.ToggleButton;
 
 import com.ardic.android.iotignitedemoapp.constants.Constants;
 
-public class SensorsActivity extends AppCompatActivity {
+public class SensorsActivity extends Activity {
 
     private static String TAG = "IoTIgniteDemoApp";
 

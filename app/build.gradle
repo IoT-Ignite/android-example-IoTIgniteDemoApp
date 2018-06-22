@@ -1,28 +1,15 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 24
-    buildToolsVersion "24.0.0"
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
 
     defaultConfig {
         applicationId "com.ardic.android.iotignitedemoapp"
-        minSdkVersion 15
-        targetSdkVersion 24
+        minSdkVersion 16
+        targetSdkVersion 27
         versionCode project.VERSION_CODE.toInteger()
         versionName project.VERSION_NAME
-    }
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            applicationVariants.all {
-                variant -> renameAPK(variant, defaultConfig, 'R')
-            }
-        }
-        debug {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
     }
     signingConfigs {
         release {
@@ -41,16 +28,24 @@ android {
     }
     buildTypes {
         release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            applicationVariants.all {
+                variant -> renameAPK(variant, defaultConfig, 'R')
+            }
             signingConfig signingConfigs.release
         }
         debug {
             signingConfig signingConfigs.debug
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
 }
 repositories {
     mavenCentral()
-    maven { 
+    maven {
         url "http://repo.maven.apache.org/maven2"
     }
     maven {
@@ -58,25 +53,22 @@ repositories {
     }
 }
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:24.0.0'
-    compile 'com.android.support:support-v4:24.0.0'
-    compile 'com.google.code.gson:gson:2.7'
-    compile 'com.ardic.android:IoTIgnite:0.7'
-    compile 'com.afollestad.material-dialogs:core:0.9.1.0'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.google.code.gson:gson:2.7'
+    implementation 'com.ardic.android:IoTIgnite:0.8.2'
+    implementation 'com.afollestad.material-dialogs:core:0.9.1.0'
 }
 
 def renameAPK(variant, defaultConfig, buildType) {
-    variant.outputs.each { output ->
+    variant.outputs.all { output ->
         def formattedDate = new Date().format('yyyyMMdd')
+        def fileName=""
         if (output.zipAlign) {
-            def file = output.outputFile
-            def fileName = applicationName + "-" + defaultConfig.versionName + "-" + formattedDate + "-" + buildType + ".apk"
-            output.outputFile = new File(file.parent, fileName)
+             fileName = applicationName + "-" + defaultConfig.versionName + "-" + formattedDate + "-" + buildType + ".apk"
+        }else{
+             fileName = applicationName + "-" + defaultConfig.versionName + "-" + formattedDate + "-" + buildType + "-unaligned.apk"
         }
-        def file = output.packageApplication.outputFile
-        def fileName = applicationName + "-" + defaultConfig.versionName + "-" + formattedDate + "-" + buildType + "-unaligned.apk"
-        output.packageApplication.outputFile = new File(file.parent, fileName)
+        outputFileName = fileName
     }
 }
